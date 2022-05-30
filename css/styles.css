@@ -1,0 +1,57 @@
+/* ahora vamos a definir las "custom properties" */
+:root {
+    /* Colores */
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+
+    /* Tamaño letra */
+    --titulo: 3.8rem;
+    
+    /* Fuente  */
+}
+
+/* 1rem = 10px  pero los rem se adaptan al tamaño de la pantalla, ej:  pc, ta blet, reloj, movil, tv*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    font-size: var(--titulo);
+}
+
+.titulo span {
+    font-size: 2rem;
+}
+
+.contenedor {
+    width:  100rem;
+    /* como un reloj,  1º arriba, 2º derecha, 3º abajo, 4 izquierda */
+    margin: 0 auto 0 auto;
+    /* como se repite, podríamos ponerlo como:
+    margin: 0 auto; porque el primer valor corresponderia a 
+    arriba y abajo y el segundo como el de la derecha e izquierda*/
+}
+
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+.navegacion-principal {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
+}
